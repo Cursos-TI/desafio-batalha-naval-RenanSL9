@@ -142,19 +142,5 @@ void exibirTabuleiro(int tabuleiro[TAMANHO_TABULEIRO][TAMANHO_TABULEIRO]) {
     }
     printf("\n");
 
-    // Imprime cada linha do tabuleiro com número da linha
-    for (int i = 0; i < TAMANHO_TABULEIRO; i++) {
-        printf("%2d ", i); // Número da linha
-        for (int j = 0; j < TAMANHO_TABULEIRO; j++) {
-            if (tabuleiro[i][j] == AGUA)
-                printf("~ ");
-            else if (tabuleiro[i][j] == NAVIO)
-                printf("N ");
-            else if (tabuleiro[i][j] == HABILIDADE)
-                printf("* ");
-        }
-        printf("\n");
-    }
-
     return 0;
 }
